@@ -1,0 +1,95 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(212, 167, 124);
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav h1, nav p {
+    font-family: "Dancing Script", cursive;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.first-container {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.first-container-title {
+    padding: 10px;
+    margin: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    width: auto;
+    height: 90vh;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.second-container div h1 {
+    font-size: 5rem;
+}
+
+.second-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.second-img-container img {
+    width: 45vw;
+    height: auto;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
+}
