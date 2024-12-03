@@ -1,0 +1,153 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.float button {
+    opacity: 100;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.float button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(212, 167, 124);
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav h1, nav p {
+    font-family: "Dancing Script", cursive;
+}
+
+.mySlides img {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, span {
+    font-family: "Poppins", sans-serif;
+}
+
+.first-container {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.first-container-title {
+    padding: 10px;
+    margin: 30px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    width: auto;
+    height: 90vh;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.second-container div h1 {
+    font-size: 5rem;
+}
+
+.second-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.second-img-container img {
+    width: 45vw;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+footer {
+    font-family: "Poppins", sans-serif;
+}
+
+.hover-me-img {
+    --s: 300px; /* image size */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    padding: calc(.09*var(--s)) calc(var(--s)/2 - var(--_p));
+    box-sizing: border-box;
+    object-fit: cover;
+    border-image: 
+      radial-gradient(#e5414e 69%,#0000 70%) 
+      84.5%/calc(var(--s)/2)/0 var(--_p);
+    clip-path: polygon(
+      calc(-41% - var(--_p)) 0,
+      calc(50%  - var(--_p)) 91%,
+      calc(50%  + var(--_p)) 91%,
+      calc(141% + var(--_p)) 0);
+    transition: .5s;
+    cursor: pointer;
+    --_p: 0px;
+  }
+  .hover-me-img:hover {
+    --_p: calc(var(--s)/2);
+  }
+  
+  
+  .hover-me {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #f9ffb4;
+  }
